@@ -27,7 +27,12 @@ return (
                 value={props.input} 
                 onChange={props.handleInput} 
             />
-            <IoMdSend onClick={props.handleSubmit} className='text-2xl'/>
+            <div className='hover:bg-gray-300 rounded-full p-2 cursor-pointer flex items-center justify-center'>
+                <IoMdSend 
+                    onClick={props.handleSubmit} 
+                    className='text-2xl '
+                />
+            </div>
         </div>
     </div>
 )
